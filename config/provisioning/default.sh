@@ -8,25 +8,63 @@
 
 PYTHON_PACKAGES=(
     #"opencv-python==4.7.0.72"
+    "insightface"
 )
 
 NODES=(
     "https://github.com/ltdrdata/ComfyUI-Manager"
+    "https://github.com/WASasquatch/was-node-suite-comfyui"
+    "https://github.com/cubiq/ComfyUI_IPAdapter_plus"
+    "https://github.com/jags111/efficiency-nodes-comfyui"
+    "https://github.com/civitai/civitai_comfy_nodes"
+    "https://github.com/ltdrdata/ComfyUI-Impact-Pack"
+    "https://github.com/ltdrdata/ComfyUI-Inspire-Pack"
+    "https://github.com/pythongosssss/ComfyUI-Custom-Scripts"
+    "https://github.com/cubiq/ComfyUI_IPAdapter_plus.git"
 )
 
 CHECKPOINT_MODELS=(
-    "https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.ckpt"
+    #"https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.ckpt"
     #"https://huggingface.co/stabilityai/stable-diffusion-2-1/resolve/main/v2-1_768-ema-pruned.ckpt"
     #"https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors"
     #"https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/resolve/main/sd_xl_refiner_1.0.safetensors"
+       # "https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.ckpt"
+    # "https://huggingface.co/stabilityai/stable-diffusion-2-1/resolve/main/v2-1_768-ema-pruned.ckpt"
+    #"https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors"
+    #"https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/resolve/main/sd_xl_refiner_1.0.safetensors"
+    #Analog Madness
+    "https://civitai.com/api/download/models/261539"
+    #Ghostmix v2.0
+    # "https://civitai.com/api/download/models/76907"
+    #Realistic Vision V6.0 B1
+    #"https://civitai.com/api/download/models/245598"
+    # Juggernaut XL
+    #"https://civitai.com/api/download/models/288982"
+    # Juggernaught XL v8
+    #"https://civitai.com/api/download/models/348913"
+    # ICBINP - "I Can't Believe It's Not Photography" -LCM
+     "https://civitai.com/api/download/models/253668"
+    # RealVisXL V3.0 + Turbo
+    # "https://civitai.com/api/download/models/268861"
+    # RealVisXL V4
+    # "https://civitai.com/api/download/models/344487"
+    # PonyXL
+    "https://civitai.com/api/download/models/290640"
+    # PICX_Real
+    "https://civitai.com/api/download/models/272376"
+
 )
 
 LORA_MODELS=(
     #"https://civitai.com/api/download/models/16576"
+    "https://civitai.com/api/download/models/97013"
+    "https://civitai.com/api/download/models/445659"
+    "https://civitai.com/api/download/models/135867"
+    "https://civitai.com/api/download/models/62833"
 )
 
 VAE_MODELS=(
-    "https://huggingface.co/stabilityai/sd-vae-ft-ema-original/resolve/main/vae-ft-ema-560000-ema-pruned.safetensors"
+   # "https://huggingface.co/stabilityai/sd-vae-ft-ema-original/resolve/main/vae-ft-ema-560000-ema-pruned.safetensors"
     "https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.safetensors"
     "https://huggingface.co/stabilityai/sdxl-vae/resolve/main/sdxl_vae.safetensors"
 )
