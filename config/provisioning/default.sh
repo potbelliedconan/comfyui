@@ -147,7 +147,7 @@ function provisioning_start() {
         "${WORKSPACE}/storage/stable_diffusion/models/ipadapter" \
         "${IPADAPTER_MODELS[@]}"
     provisioning_get_models \
-        "${WORKSPACE}/storage/stable_diffusion/models/ipadapter" \
+        "${WORKSPACE}/storage/stable_diffusion/models/clip_vision" \
         "${CLIPVISION_MODELS[@]}"
     provisioning_print_end
 }
