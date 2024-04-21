@@ -61,6 +61,10 @@ LORA_MODELS=(
     "https://civitai.com/api/download/models/445659"
     "https://civitai.com/api/download/models/135867"
     "https://civitai.com/api/download/models/62833"
+    "https://civitai.com/api/download/models/100662"
+    "https://civitai.com/api/download/models/101290"
+    "https://civitai.com/api/download/models/440485"
+    
     # FACEID
     "https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid_sd15_lora.safetensors"
     "https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sd15_lora.safetensors"
@@ -98,6 +102,11 @@ CLIPVISION_MODELS=(
     "https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors"
     #"https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter_sdxl.safetensors"
    )
+
+#ADETAILER_MODELS=(
+ #   "https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors"
+    #"https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter_sdxl.safetensors"
+ #  )
 
 CONTROLNET_MODELS=(
     "https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/control_canny-fp16.safetensors"
