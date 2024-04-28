@@ -52,6 +52,11 @@ CHECKPOINT_MODELS=(
     "https://civitai.com/api/download/models/290640"
     # PICX_Real
     "https://civitai.com/api/download/models/272376"
+    # Pony 🦄FaeTality
+    "https://civitai.com/api/download/models/464939"
+    # PianoMix
+    "https://civitai.com/api/download/models/446959"
+    
 
 )
 
@@ -64,6 +69,10 @@ LORA_MODELS=(
     "https://civitai.com/api/download/models/100662"
     "https://civitai.com/api/download/models/101290"
     "https://civitai.com/api/download/models/440485"
+    #Pony embeddings
+    "https://civitai.com/api/download/models/372656" 
+    "https://civitai.com/api/download/models/372656"
+    "https://civitai.com/api/download/models/380277"
     
     # FACEID
     "https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid_sd15_lora.safetensors"
