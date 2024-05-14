@@ -9,6 +9,7 @@
 PYTHON_PACKAGES=(
     #"opencv-python==4.7.0.72"
     "insightface"
+    "facexlib"
 )
 
 NODES=(
@@ -21,6 +22,8 @@ NODES=(
     "https://github.com/pythongosssss/ComfyUI-Custom-Scripts"
     "https://github.com/cubiq/ComfyUI_IPAdapter_plus.git"
     "https://github.com/cubiq/ComfyUI_essentials.git"
+    "https://github.com/cubiq/PuLID_ComfyUI.git"
+    "https://github.com/cubiq/ComfyUI_FaceAnalysis.git"
 )
 
 CHECKPOINT_MODELS=(
@@ -102,6 +105,14 @@ ESRGAN_MODELS=(
 )
 
 IPADAPTER_MODELS=(
+    "https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid_sd15.bin"
+    "https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sd15.bin"
+    "https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-portrait-v11_sd15.bin"
+    "https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid_sdxl.bin"
+    "https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sdxl.bin"
+    "https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-portrait_sdxl.bin"
+    "https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-portrait_sdxl_unnorm.bin"
+
     "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15.safetensors"
     "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15_light_v11.bin"
     "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus_sd15.safetensors"
@@ -116,7 +127,13 @@ CLIPVISION_MODELS=(
     "https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors"
     #"https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter_sdxl.safetensors"
    )
+PULID_MODELS=(
+    "https://huggingface.co/huchenlei/ipadapter_pulid/resolve/main/ip-adapter_pulid_sdxl_fp16.safetensors"
+)
 
+ANTELOPE_MODELS=(
+    "https://huggingface.co/MonsterMMORPG/tools/tree/main"   
+)
 #ADETAILER_MODELS=(
  #   "https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors"
     #"https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter_sdxl.safetensors"
@@ -172,6 +189,12 @@ function provisioning_start() {
     provisioning_get_models \
         "${WORKSPACE}/storage/stable_diffusion/models/clip_vision" \
         "${CLIPVISION_MODELS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/storage/stable_diffusion/models/pulid" \
+        "${PULID_MODELS[@]}"
+     provisioning_get_models \
+        "${WORKSPACE}/storage/stable_diffusion/models/insightface/models/antelopev2" \
+        "${ANTELOPE_MODELS[@]}"
     provisioning_print_end
 }
 
