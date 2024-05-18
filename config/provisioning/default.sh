@@ -44,7 +44,7 @@ CHECKPOINT_MODELS=(
     # Juggernaut XL
     #"https://civitai.com/api/download/models/288982"
     # Juggernaught XL v8
-    #"https://civitai.com/api/download/models/348913"
+    "https://civitai.com/api/download/models/348913"
     # ICBINP - "I Can't Believe It's Not Photography" -LCM
      "https://civitai.com/api/download/models/253668"
     # RealVisXL V3.0 + Turbo
