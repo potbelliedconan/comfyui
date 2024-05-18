@@ -81,6 +81,7 @@ LORA_MODELS=(
     "https://civitai.com/api/download/models/372656"
     "https://civitai.com/api/download/models/380277"
     "https://civitai.com/api/download/models/467236"
+    "https://civitai.com/api/download/models/412708"
     
     # FACEID
     "https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid_sd15_lora.safetensors"
