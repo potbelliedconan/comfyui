@@ -61,6 +61,8 @@ CHECKPOINT_MODELS=(
     "https://civitai.com/api/download/models/446959"
     # Pony Realism 🔮
     "https://civitai.com/api/download/models/465251"
+    # AutismMix
+    "https://civitai.com/api/download/models/324619"
     
 
 )
