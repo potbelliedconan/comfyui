@@ -24,6 +24,7 @@ NODES=(
     "https://github.com/cubiq/ComfyUI_essentials.git"
     "https://github.com/cubiq/PuLID_ComfyUI.git"
     "https://github.com/cubiq/ComfyUI_FaceAnalysis.git"
+    "https://github.com/Gourieff/comfyui-reactor-node.git"
 )
 
 CHECKPOINT_MODELS=(
