@@ -47,7 +47,7 @@ CHECKPOINT_MODELS=(
     # Juggernaught XL v8
     "https://civitai.com/api/download/models/348913"
     # ICBINP - "I Can't Believe It's Not Photography" -LCM
-     "https://civitai.com/api/download/models/253668"
+     "https://civitai.com/api/download/models/253668" 
     # RealVisXL V3.0 + Turbo
     # "https://civitai.com/api/download/models/268861"
     # RealVisXL V4
@@ -61,9 +61,12 @@ CHECKPOINT_MODELS=(
     # PianoMix
     "https://civitai.com/api/download/models/446959"
     # Pony Realism 🔮
-    "https://civitai.com/api/download/models/465251"
+    "https://civitai.com/api/download/models/534642"
     # AutismMix
     "https://civitai.com/api/download/models/324619"
+    # Zonkey
+    "https://civitai.com/api/download/models/537531"
+    
     
 
 )
