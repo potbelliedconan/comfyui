@@ -168,6 +168,17 @@ CONTROLNET_MODELS=(
 
 ### DO NOT EDIT BELOW HERE UNLESS YOU KNOW WHAT YOU ARE DOING ###
 
+# Download @ashleykleynhans civitai script from GitHub
+function download_script() {
+    local script_url="https://raw.githubusercontent.com/ashleykleynhans/civitai-downloader/main/download.py"
+    local script_path="/opt/ai-dock/bin/download.py"
+
+    wget -O "$script_path" "$script_url"
+    chmod +x "$script_path"
+    mkdir $HOME/.civitai/
+    echo $CIVITAI_API_KEY > $HOME/.civitai/config
+}
+
 function provisioning_start() {
     DISK_GB_AVAILABLE=$(($(df --output=avail -m "${WORKSPACE}" | tail -n1) / 1000))
     DISK_GB_USED=$(($(df --output=used -m "${WORKSPACE}" | tail -n1) / 1000))
@@ -266,8 +277,26 @@ function provisioning_print_end() {
 }
 
 # Download from $1 URL to $2 file path
+#function provisioning_download() {
+#    wget -qnc --content-disposition --show-progress -e dotbytes="${3:-4M}" -P "$2" "$1"
+#}
+
 function provisioning_download() {
-    wget -qnc --content-disposition --show-progress -e dotbytes="${3:-4M}" -P "$2" "$1"
+    local url="$1"
+    local output_dir="$2"
+    local token="$CIVITAI_API_KEY"
+
+    if [[ "$url" == *"civitai.com"* ]]; then
+        if [[ -n "$token" ]]; then
+            python /opt/ai-dock/bin/download.py "$1" "$2" "$token"
+        else
+            echo "CivitAI API token not found in environment variable CIVITAI_API_KEY."
+            exit 1
+        fi
+    else
+        wget -qnc --content-disposition --show-progress -e dotbytes="${3:-4M}" -P "$output_dir" "$url"
+    fi
 }
 
+download_script
 provisioning_start
