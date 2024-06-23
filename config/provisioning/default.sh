@@ -176,7 +176,7 @@ function download_script() {
     wget -O "$script_path" "$script_url"
     chmod +x "$script_path"
     mkdir $HOME/.civitai/
-    echo $CIVITAI_API_KEY > $HOME/.civitai/config
+    echo "$CIVITAI_API_KEY" > $HOME/.civitai/config
 }
 
 function provisioning_start() {
@@ -288,7 +288,7 @@ function provisioning_download() {
 
     if [[ "$url" == *"civitai.com"* ]]; then
         #if [[ -n "$token" ]]; then
-            python3 /opt/ai-dock/bin/download.py "$1" "$2"
+            /opt/ai-dock/bin/download.py "$1" "$2"
         #else
         #    echo "CivitAI API token not found in environment variable CIVITAI_API_KEY."
         #    exit 1
