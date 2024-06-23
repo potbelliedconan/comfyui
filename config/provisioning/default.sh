@@ -288,7 +288,7 @@ function provisioning_download() {
 
     if [[ "$url" == *"civitai.com"* ]]; then
         #if [[ -n "$token" ]]; then
-            python /opt/ai-dock/bin/download.py "$1" "$2"
+            python3 /opt/ai-dock/bin/download.py "$1" "$2"
         #else
         #    echo "CivitAI API token not found in environment variable CIVITAI_API_KEY."
         #    exit 1
