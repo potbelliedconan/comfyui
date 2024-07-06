@@ -176,7 +176,7 @@ function download_script() {
     wget -O "$script_path" "$script_url"
     chmod +x "$script_path"
     mkdir $HOME/.civitai/
-    echo ${CIVITAI_API_KEY} > $HOME/.civitai/config
+    echo -n ${CIVITAI_API_KEY} > $HOME/.civitai/config
     #echo {{ RUNPOD_SECRET_CIVITAI_API_KEY }} > $HOME/.civitai/config
 }
 
