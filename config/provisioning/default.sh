@@ -283,11 +283,11 @@ function provisioning_print_end() {
 #}
 
 function provisioning_download() {
-    local url="$1"
-    local output_dir="$2"
-    local token="$CIVITAI_API_KEY"
+    #local url="$1"
+    #local output_dir="$2"
+    #local token=${CIVITAI_API_KEY}
 
-    if [[ "$url" == *"civitai.com"* ]]; then
+    if [[ "$1" == *"civitai.com"* ]]; then
         #if [[ -n "$token" ]]; then
             /opt/ai-dock/bin/download.py "$1" "$2"
         #else
@@ -295,7 +295,8 @@ function provisioning_download() {
         #    exit 1
         # fi
     else
-        wget -qnc --content-disposition --show-progress -e dotbytes="${3:-4M}" -P "$output_dir" "$url"
+        #wget -qnc --content-disposition --show-progress -e dotbytes="${3:-4M}" -P "$output_dir" "$url"
+        wget -qnc --content-disposition --show-progress -e dotbytes="${3:-4M}" -P "$2" "$1"
     fi
 }
 
