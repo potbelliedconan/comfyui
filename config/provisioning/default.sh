@@ -47,7 +47,7 @@ CHECKPOINT_MODELS=(
     # Juggernaught XL v8
     "https://civitai.com/api/download/models/348913"
     # ICBINP - "I Can't Believe It's Not Photography" -LCM
-     "https://civitai.com/api/download/models/253668" 
+    # "https://civitai.com/api/download/models/253668" 
     # RealVisXL V3.0 + Turbo
     # "https://civitai.com/api/download/models/268861"
     # RealVisXL V4
@@ -59,13 +59,15 @@ CHECKPOINT_MODELS=(
     # Pony 🦄FaeTality
     "https://civitai.com/api/download/models/464939"
     # PianoMix
-    "https://civitai.com/api/download/models/446959"
+    #"https://civitai.com/api/download/models/446959"
     # Pony Realism 🔮
     "https://civitai.com/api/download/models/534642"
     # AutismMix
     "https://civitai.com/api/download/models/324619"
     # Zonkey
     "https://civitai.com/api/download/models/537531"
+    # Godiva
+    "https://civitai.com/api/download/models/643792"
     
     
 
@@ -88,6 +90,13 @@ LORA_MODELS=(
     "https://civitai.com/api/download/models/380277"
     "https://civitai.com/api/download/models/467236"
     "https://civitai.com/api/download/models/412708"
+    # Pony Style
+    "https://civitai.com/api/download/models/373439" 
+    "https://civitai.com/api/download/models/494234"
+    "https://civitai.com/api/download/models/545217"
+    "https://civitai.com/api/download/models/525818"
+    "https://civitai.com/api/download/models/388697"
+    #"https://civitai.com/api/download/models/388697"
     
     # FACEID
     "https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid_sd15_lora.safetensors"
