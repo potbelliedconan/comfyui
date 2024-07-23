@@ -57,17 +57,19 @@ CHECKPOINT_MODELS=(
     # PICX_Real
     "https://civitai.com/api/download/models/272376"
     # Pony 🦄FaeTality
-    "https://civitai.com/api/download/models/464939"
+    # "https://civitai.com/api/download/models/464939"
     # PianoMix
     #"https://civitai.com/api/download/models/446959"
     # Pony Realism 🔮
-    "https://civitai.com/api/download/models/534642"
+    # "https://civitai.com/api/download/models/534642"
     # AutismMix
     "https://civitai.com/api/download/models/324619"
     # Zonkey
     "https://civitai.com/api/download/models/537531"
     # Godiva
-    "https://civitai.com/api/download/models/643792"
+    # "https://civitai.com/api/download/models/643792"
+    # Cyberrealistic PonY
+    "https://civitai.com/api/download/models/666512"
     
     
 
