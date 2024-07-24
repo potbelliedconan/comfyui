@@ -25,6 +25,8 @@ NODES=(
     "https://github.com/cubiq/PuLID_ComfyUI.git"
     "https://github.com/cubiq/ComfyUI_FaceAnalysis.git"
     "https://github.com/Gourieff/comfyui-reactor-node.git"
+    "https://github.com/Acly/comfyui-inpaint-nodes.git"
+    "https://github.com/zer0TF/cute-comfy.git"
 )
 
 CHECKPOINT_MODELS=(
@@ -100,6 +102,17 @@ LORA_MODELS=(
     "https://civitai.com/api/download/models/388697"
     "https://civitai.com/api/download/models/651075"
     "https://civitai.com/api/download/models/651075"
+    # Pony blacked Meme
+    "https://civitai.com/api/download/models/660542"
+    # All Disney Princess XL LoRA Model from Ralph Breaks the Internet
+    "https://civitai.com/api/download/models/431144"
+    # ExpressiveH
+    "https://civitai.com/api/download/models/382152"
+    # Fire & Ice Teegra
+    "https://civitai.com/api/download/models/540914"
+    # Nipple Slider
+    "https://civitai.com/api/download/models/539244"
+    
     
     # FACEID
     "https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid_sd15_lora.safetensors"
@@ -152,6 +165,10 @@ PULID_MODELS=(
 
 ANTELOPE_MODELS=(
     "https://huggingface.co/MonsterMMORPG/tools/tree/main"   
+)
+FOOOCUS_INPAINT_MODELS=(
+    "https://huggingface.co/lllyasviel/fooocus_inpaint/resolve/main/fooocus_inpaint_head.pth"
+    "https://huggingface.co/lllyasviel/fooocus_inpaint/resolve/main/inpaint_v26.fooocus.patch"
 )
 #ADETAILER_MODELS=(
  #   "https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors"
@@ -222,9 +239,12 @@ function provisioning_start() {
     provisioning_get_models \
         "${WORKSPACE}/storage/stable_diffusion/models/pulid" \
         "${PULID_MODELS[@]}"
-     provisioning_get_models \
+    provisioning_get_models \
         "${WORKSPACE}/storage/stable_diffusion/models/insightface/models/antelopev2" \
         "${ANTELOPE_MODELS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/storage/stable_diffusion/models/inpaint" \
+        "${FOOOCUS_INPAINT_MODELS[@]}"
     provisioning_print_end
 }
 
