@@ -71,7 +71,7 @@ CHECKPOINT_MODELS=(
     # Godiva
     # "https://civitai.com/api/download/models/643792"
     # Cyberrealistic PonY
-    "https://civitai.com/api/download/models/666512"
+    "https://civitai.com/api/download/models/672454"
     
     
 
