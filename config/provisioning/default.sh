@@ -47,7 +47,7 @@ CHECKPOINT_MODELS=(
     # Juggernaut XL
     #"https://civitai.com/api/download/models/288982"
     # Juggernaught XL v8
-    "https://civitai.com/api/download/models/348913"
+    # "https://civitai.com/api/download/models/348913"
     # ICBINP - "I Can't Believe It's Not Photography" -LCM
     # "https://civitai.com/api/download/models/253668" 
     # RealVisXL V3.0 + Turbo
@@ -69,9 +69,11 @@ CHECKPOINT_MODELS=(
     # Zonkey
     "https://civitai.com/api/download/models/537531"
     # Godiva
-    # "https://civitai.com/api/download/models/643792"
-    # Cyberrealistic PonY
-    "https://civitai.com/api/download/models/672454"
+     "https://civitai.com/api/download/models/643792"
+    # Cyberrealistic PonY 6.9
+    #"https://civitai.com/api/download/models/672454"
+    # Cyberrealistic PonY 6.1
+    "https://civitai.com/api/download/models/680915"
     
     
 
