@@ -191,7 +191,7 @@ function provisioning_start() {
         "${WORKSPACE}/storage/stable_diffusion/models/clip" \
         "${CLIP_MODELS[@]}"
     provisioning_get_models \
-        "${WORKSPACE}/storage/stable_diffusion/models/insightface/models/unet" \
+        "${WORKSPACE}/storage/stable_diffusion/models/unet" \
         "${UNET_MODELS[@]}"
    # provisioning_get_models \
    #     "${WORKSPACE}/storage/stable_diffusion/models/inpaint" \
