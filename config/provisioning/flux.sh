@@ -137,12 +137,14 @@ FOOOCUS_INPAINT_MODELS=(
     "https://huggingface.co/lllyasviel/fooocus_inpaint/resolve/main/inpaint_v26.fooocus.patch"
 )
 UNET_MODELS=(
-    # fp8_e4m3fn
+    # fp8_e4m3fn  
     # "https://huggingface.co/Kijai/flux-fp8/resolve/main/flux1-schnell-fp8.safetensors"
     # "https://huggingface.co/Kijai/flux-fp8/resolve/main/flux1-dev-fp8.safetensors"
     # fp8
     "https://huggingface.co/Comfy-Org/flux1-dev/resolve/main/flux1-dev-fp8.safetensors"
     "https://huggingface.co/Comfy-Org/flux1-schnell/resolve/main/flux1-schnell-fp8.safetensors"
+    # bnb-nf4
+    "https://huggingface.co/lllyasviel/flux1-dev-bnb-nf4/resolve/main/flux1-dev-bnb-nf4.safetensors"
   )
 
 
