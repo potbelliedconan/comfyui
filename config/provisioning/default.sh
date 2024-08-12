@@ -57,7 +57,7 @@ CHECKPOINT_MODELS=(
     # PonyXL
     "https://civitai.com/api/download/models/290640"
     # PICX_Real
-    "https://civitai.com/api/download/models/272376"
+    # "https://civitai.com/api/download/models/272376"
     # Pony 🦄FaeTality
     # "https://civitai.com/api/download/models/464939"
     # PianoMix
