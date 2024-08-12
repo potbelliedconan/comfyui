@@ -10,6 +10,7 @@ PYTHON_PACKAGES=(
     #"opencv-python==4.7.0.72"
     "insightface"
     #"facexlib"
+    "bitsandbytes"
 )
 
 NODES=(
@@ -27,6 +28,8 @@ NODES=(
     "https://github.com/Gourieff/comfyui-reactor-node.git"
     # "https://github.com/Acly/comfyui-inpaint-nodes.git"
     "https://github.com/zer0TF/cute-comfy.git"
+    # Bits and Bytes Loader
+    "https://github.com/comfyanonymous/ComfyUI_bitsandbytes_NF4.git"
 )
 
 CHECKPOINT_MODELS=(
@@ -39,7 +42,7 @@ CHECKPOINT_MODELS=(
     #"https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors"
     #"https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/resolve/main/sd_xl_refiner_1.0.safetensors"
     #Analog Madness
-    "https://civitai.com/api/download/models/261539"
+    #"https://civitai.com/api/download/models/261539"
     #Ghostmix v2.0
     # "https://civitai.com/api/download/models/76907"
     #Realistic Vision V6.0 B1
@@ -55,9 +58,9 @@ CHECKPOINT_MODELS=(
     # RealVisXL V4
     # "https://civitai.com/api/download/models/344487"
     # PonyXL
-    "https://civitai.com/api/download/models/290640"
+    #"https://civitai.com/api/download/models/290640"
     # PICX_Real
-    "https://civitai.com/api/download/models/272376"
+    #"https://civitai.com/api/download/models/272376"
     # Pony 🦄FaeTality
     # "https://civitai.com/api/download/models/464939"
     # PianoMix
@@ -65,29 +68,45 @@ CHECKPOINT_MODELS=(
     # Pony Realism 🔮
     # "https://civitai.com/api/download/models/534642"
     # AutismMix
-    "https://civitai.com/api/download/models/324619"
+    #"https://civitai.com/api/download/models/324619"
     # Zonkey
-    "https://civitai.com/api/download/models/537531"
+    #"https://civitai.com/api/download/models/537531"
     # Godiva
-     "https://civitai.com/api/download/models/643792"
+    # "https://civitai.com/api/download/models/643792"
     # Cyberrealistic PonY 6.9
     #"https://civitai.com/api/download/models/672454"
     # Cyberrealistic PonY 6.1
-    "https://civitai.com/api/download/models/680915"
+    #"https://civitai.com/api/download/models/680915"
     
+    # bnb-nf4
+    "https://huggingface.co/lllyasviel/flux1-dev-bnb-nf4/resolve/main/flux1-dev-bnb-nf4.safetensors"
+    # bnb-schnell
+    "https://civitai.com/api/download/models/714399"
+
     
 
 )
 
 LORA_MODELS=(
-    # FACEID
-    "https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid_sd15_lora.safetensors"
-    "https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sd15_lora.safetensors"
-    "https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid_sdxl_lora.safetensors"
-    "https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sdxl_lora.safetensors"
-    # Composition
-    "https://huggingface.co/ostris/ip-composition-adapter/resolve/main/ip_plus_composition_sd15.safetensors"
-    "https://huggingface.co/ostris/ip-composition-adapter/resolve/main/ip_plus_composition_sdxl.safetensors"
+    #
+    # X-Labs Lora Collection
+    #
+    # Flux Furry
+    "https://huggingface.co/XLabs-AI/flux-furry-lora/resolve/main/furry_lora.safetensors"
+    # Flux Anime
+    "https://huggingface.co/XLabs-AI/flux-lora-collection/resolve/main/anime_lora_comfy_converted.safetensors"
+    # Flux Art
+    "https://huggingface.co/XLabs-AI/flux-lora-collection/resolve/main/art_lora_comfy_converted.safetensors"
+    # Flux Disney
+    "https://huggingface.co/XLabs-AI/flux-lora-collection/resolve/main/disney_lora_comfy_converted.safetensors"
+    # Flux MJv6
+    "https://huggingface.co/XLabs-AI/flux-lora-collection/resolve/main/mjv6_lora_comfy_converted.safetensors"
+    # Flux Realism
+    "https://huggingface.co/XLabs-AI/flux-lora-collection/resolve/main/realism_lora_comfy_converted.safetensors"
+    # Flux Scenery
+    "https://huggingface.co/XLabs-AI/flux-lora-collection/resolve/main/scenery_lora_comfy_converted.safetensors"
+    # Flux NSFW SOCALGUITARIST
+    "https://civitai.com/api/download/models/715962"
 )
 
 VAE_MODELS=(
@@ -141,11 +160,9 @@ UNET_MODELS=(
     # "https://huggingface.co/Kijai/flux-fp8/resolve/main/flux1-schnell-fp8.safetensors"
     # "https://huggingface.co/Kijai/flux-fp8/resolve/main/flux1-dev-fp8.safetensors"
     # fp8
-    "https://huggingface.co/Comfy-Org/flux1-dev/resolve/main/flux1-dev-fp8.safetensors"
-    "https://huggingface.co/Comfy-Org/flux1-schnell/resolve/main/flux1-schnell-fp8.safetensors"
-    # bnb-nf4
-    "https://huggingface.co/lllyasviel/flux1-dev-bnb-nf4/resolve/main/flux1-dev-bnb-nf4.safetensors"
-  )
+  #  "https://huggingface.co/Comfy-Org/flux1-dev/resolve/main/flux1-dev-fp8.safetensors"
+  #  "https://huggingface.co/Comfy-Org/flux1-schnell/resolve/main/flux1-schnell-fp8.safetensors"
+     )
 
 
 ### DO NOT EDIT BELOW HERE UNLESS YOU KNOW WHAT YOU ARE DOING ###
@@ -168,12 +185,12 @@ function provisioning_start() {
     provisioning_print_header
     provisioning_get_nodes
     provisioning_install_python_packages
-   # provisioning_get_models \
-   #     "${WORKSPACE}/storage/stable_diffusion/models/ckpt" \
-   #     "${CHECKPOINT_MODELS[@]}"
-  #  provisioning_get_models \
-  #      "${WORKSPACE}/storage/stable_diffusion/models/lora" \
-  #      "${LORA_MODELS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/storage/stable_diffusion/models/ckpt" \
+        "${CHECKPOINT_MODELS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/storage/stable_diffusion/models/lora" \
+        "${LORA_MODELS[@]}"
   #  provisioning_get_models \
   #      "${WORKSPACE}/storage/stable_diffusion/models/controlnet" \
   #      "${CONTROLNET_MODELS[@]}"
