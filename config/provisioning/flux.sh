@@ -24,12 +24,12 @@ NODES=(
     # "https://github.com/cubiq/ComfyUI_IPAdapter_plus.git"
     "https://github.com/cubiq/ComfyUI_essentials.git"
    # "https://github.com/cubiq/PuLID_ComfyUI.git"
-    "https://github.com/cubiq/ComfyUI_FaceAnalysis.git"
-    "https://github.com/Gourieff/comfyui-reactor-node.git"
+    "https://github.com/cubiq/ComfyUI_FaceAnalysis"
+    "https://github.com/Gourieff/comfyui-reactor-node"
     # "https://github.com/Acly/comfyui-inpaint-nodes.git"
-    "https://github.com/zer0TF/cute-comfy.git"
+    "https://github.com/zer0TF/cute-comfy"
     # Bits and Bytes Loader
-    "https://github.com/comfyanonymous/ComfyUI_bitsandbytes_NF4.git"
+    "https://github.com/comfyanonymous/ComfyUI_bitsandbytes_NF4"
 )
 
 CHECKPOINT_MODELS=(
