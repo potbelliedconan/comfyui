@@ -10,7 +10,7 @@ PYTHON_PACKAGES=(
     #"opencv-python==4.7.0.72"
     "insightface"
     #"facexlib"
-    "bitsandbytes"
+   #  "bitsandbytes"
 )
 
 NODES=(
@@ -29,7 +29,7 @@ NODES=(
     # "https://github.com/Acly/comfyui-inpaint-nodes.git"
     "https://github.com/zer0TF/cute-comfy"
     # Bits and Bytes Loader
-    "https://github.com/comfyanonymous/ComfyUI_bitsandbytes_NF4"
+  #  "https://github.com/comfyanonymous/ComfyUI_bitsandbytes_NF4"
 )
 
 CHECKPOINT_MODELS=(
@@ -79,9 +79,9 @@ CHECKPOINT_MODELS=(
     #"https://civitai.com/api/download/models/680915"
     
     # bnb-nf4
-    "https://huggingface.co/lllyasviel/flux1-dev-bnb-nf4/resolve/main/flux1-dev-bnb-nf4.safetensors"
+   # "https://huggingface.co/lllyasviel/flux1-dev-bnb-nf4/resolve/main/flux1-dev-bnb-nf4.safetensors"
     # bnb-schnell
-    "https://civitai.com/api/download/models/714399"
+   # "https://civitai.com/api/download/models/714399"
 
     
 
@@ -157,11 +157,11 @@ FOOOCUS_INPAINT_MODELS=(
 )
 UNET_MODELS=(
     # fp8_e4m3fn  
-    # "https://huggingface.co/Kijai/flux-fp8/resolve/main/flux1-schnell-fp8.safetensors"
-    # "https://huggingface.co/Kijai/flux-fp8/resolve/main/flux1-dev-fp8.safetensors"
+     "https://huggingface.co/Kijai/flux-fp8/resolve/main/flux1-schnell-fp8.safetensors"
+     "https://huggingface.co/Kijai/flux-fp8/resolve/main/flux1-dev-fp8.safetensors"
     # fp8
-  #  "https://huggingface.co/Comfy-Org/flux1-dev/resolve/main/flux1-dev-fp8.safetensors"
-  #  "https://huggingface.co/Comfy-Org/flux1-schnell/resolve/main/flux1-schnell-fp8.safetensors"
+    #"https://huggingface.co/Comfy-Org/flux1-dev/resolve/main/flux1-dev-fp8.safetensors"
+    #"https://huggingface.co/Comfy-Org/flux1-schnell/resolve/main/flux1-schnell-fp8.safetensors"
      )
 
 
