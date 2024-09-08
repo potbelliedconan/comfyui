@@ -107,6 +107,58 @@ LORA_MODELS=(
     "https://huggingface.co/XLabs-AI/flux-lora-collection/resolve/main/scenery_lora_comfy_converted.safetensors"
     # Flux NSFW SOCALGUITARIST
     "https://civitai.com/api/download/models/715962"
+        # Flux NSFW SOCALGUITARIST
+    "https://civitai.com/api/download/models/772201"
+        # Flux harness gag
+    "https://civitai.com/api/download/models/757279"
+        # Flux Hairy Girls
+    "https://civitai.com/api/download/models/751657"
+        # Flux Ultimate Realistic Breast NIPPLES-GMR
+    "https://civitai.com/api/download/models/781336"
+        # Flux Mooning / Upskirt / Clothed-To-Nude
+    "https://civitai.com/api/download/models/811513"
+        # Lying Down Breast-Morph / Backtits
+    "https://civitai.com/api/download/models/817285"
+         # Boris Vallejo Style
+    "https://civitai.com/api/download/models/760048"
+         # Realistic Ghost Areolas-GMR
+    "https://civitai.com/api/download/models/814029"
+         # (Flux) Wet T-Shirt and Wet Clothes
+    "https://civitai.com/api/download/models/810200"
+         # [FLUX] - Frank Frazetta Style Oil Painting
+    "https://civitai.com/api/download/models/792756"
+         # OnOff for Flux (On/Off)
+    "https://civitai.com/api/download/models/809563"
+         # Pussy Spread
+    "https://civitai.com/api/download/models/758979"
+         # Pussy
+    "https://civitai.com/api/download/models/789836"
+         # Real Amateur Nudes [Flux]
+    "https://civitai.com/api/download/models/797939"
+         # Nudist Beach Flux
+    "https://civitai.com/api/download/models/771531"
+         # Sapieri for flux
+    "https://civitai.com/api/download/models/728943"
+           # Realistic Skin Texture style XL (Detailed Skin) + SD1.5 + Flux1D
+    "https://civitai.com/api/download/models/804746"
+           # FLUXTASTIC v3 - Boobs and More
+    "https://civitai.com/api/download/models/732180"
+           # Full Female Anatomy - Fineart Nudity - Flux Lora (NSFW) -Breasts/Pussy/Ass/and more
+    "https://civitai.com/api/download/models/748526"
+            # Spunky
+    "https://civitai.com/api/download/models/821073"
+            # perfect pussy
+    "https://civitai.com/api/download/models/821168"
+       # OnOff for Flux (On/Off)
+    "https://civitai.com/api/download/models/809563"
+       # perfect pussy
+    "https://civitai.com/api/download/models/821168"
+         #  cash transaction
+    "https://civitai.com/api/download/models/735901"
+         # Hidden SpyCam Changing Room Peephole FLUX
+    "https://civitai.com/api/download/models/729352"
+         # 2000s Style Mirror Selfie Nudes FLUX
+    "https://civitai.com/api/download/models/755520"
 )
 
 CELEB_LORA_MODELS=(
@@ -207,7 +259,8 @@ FOOOCUS_INPAINT_MODELS=(
 UNET_MODELS=(
     # fp8_e4m3fn  
      "https://huggingface.co/Kijai/flux-fp8/resolve/main/flux1-schnell-fp8.safetensors"
-     "https://huggingface.co/Kijai/flux-fp8/resolve/main/flux1-dev-fp8.safetensors"
+     "https://huggingface.co/Kijai/flux-fp8/resolve/main/flux1-dev-fp8.safetensors" 
+     "https://civitai.com/api/download/models/770213"
     # fp8
     #"https://huggingface.co/Comfy-Org/flux1-dev/resolve/main/flux1-dev-fp8.safetensors"
     #"https://huggingface.co/Comfy-Org/flux1-schnell/resolve/main/flux1-schnell-fp8.safetensors"
