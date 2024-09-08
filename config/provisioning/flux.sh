@@ -109,6 +109,55 @@ LORA_MODELS=(
     "https://civitai.com/api/download/models/715962"
 )
 
+CELEB_LORA_MODELS=(
+    #
+    # X-Labs Lora Collection
+    #
+    # Kirsty Alloe
+    "https://civitai.com/api/download/models/819386"
+    # Hilary Clinton
+    "https://civitai.com/api/download/models/790803"
+     # Kate Upton
+    "https://civitai.com/api/download/models/819719"
+     # Andrea Botez
+    "https://civitai.com/api/download/models/820544"
+     # Lexa Doig
+    "https://civitai.com/api/download/models/820694"
+     # Anna Kendrick
+    "https://civitai.com/api/download/models/816420"
+     # Michelle Trachtenberg
+    "https://civitai.com/api/download/models/817964"
+     # MSophie Lloyd
+    "https://civitai.com/api/download/models/816372"
+     # Billie Eillish
+    "https://civitai.com/api/download/models/811511"
+     # Sanna Marin
+    "https://civitai.com/api/download/models/742013"
+     # Selena Gomez
+    "https://civitai.com/api/download/models/797208"
+    #  Alexandria Ocasio-Cortez
+    "https://civitai.com/api/download/models/810608"
+     # Madonna
+    "https://civitai.com/api/download/models/810656"
+     # Sophie Lillis
+    "https://civitai.com/api/download/models/804403"
+     # Gwendoline Christie
+    "https://civitai.com/api/download/models/808064"
+    # Xenia Seeberg / Xev Bellringer
+    "https://civitai.com/api/download/models/806203"
+     # Daisy Ridley
+    "https://civitai.com/api/download/models/809495"
+     # Natalie Dormer
+    "https://civitai.com/api/download/models/806759"
+     # Florence Pugh
+    "https://civitai.com/api/download/models/806933"
+     # Imogen Dyer
+    "https://civitai.com/api/download/models/742233"
+     # Emilia Clarke
+    "https://civitai.com/api/download/models/729722"
+     # Gal Gadot
+    "https://civitai.com/api/download/models/724060"
+)
 VAE_MODELS=(
    # "https://huggingface.co/stabilityai/sd-vae-ft-ema-original/resolve/main/vae-ft-ema-560000-ema-pruned.safetensors"
    # "https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.safetensors"
@@ -191,9 +240,9 @@ function provisioning_start() {
     provisioning_get_models \
         "${WORKSPACE}/storage/stable_diffusion/models/lora" \
         "${LORA_MODELS[@]}"
-  #  provisioning_get_models \
-  #      "${WORKSPACE}/storage/stable_diffusion/models/controlnet" \
-  #      "${CONTROLNET_MODELS[@]}"
+    provisioning_get_models \
+       "${WORKSPACE}/storage/stable_diffusion/models/lora/celeb" \
+       "${CELEB_LORA_MODELS[@]}"
     provisioning_get_models \
         "${WORKSPACE}/storage/stable_diffusion/models/vae" \
         "${VAE_MODELS[@]}"
