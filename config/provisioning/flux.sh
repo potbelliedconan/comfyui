@@ -158,7 +158,10 @@ LORA_MODELS=(
          # Hidden SpyCam Changing Room Peephole FLUX
     "https://civitai.com/api/download/models/729352"
          # 2000s Style Mirror Selfie Nudes FLUX
-    "https://civitai.com/api/download/models/755520"
+    "https://civitai.com/api/download/models/755520" 
+             # real pussy - peach
+    "https://civitai.com/api/download/models/309907" 
+    
 )
 
 CELEB_LORA_MODELS=(
@@ -260,9 +263,11 @@ UNET_MODELS=(
     # fp8_e4m3fn  
      "https://huggingface.co/Kijai/flux-fp8/resolve/main/flux1-schnell-fp8.safetensors"
      "https://huggingface.co/Kijai/flux-fp8/resolve/main/flux1-dev-fp8.safetensors" 
-     "https://civitai.com/api/download/models/770213"
+    # "https://civitai.com/api/download/models/770213" 
+      "https://civitai.com/api/download/models/742989" 
+      "https://civitai.com/api/download/models/694648"
     # fp8
-    #"https://huggingface.co/Comfy-Org/flux1-dev/resolve/main/flux1-dev-fp8.safetensors"
+    "https://huggingface.co/Comfy-Org/flux1-dev/resolve/main/flux1-dev-fp8.safetensors"
     #"https://huggingface.co/Comfy-Org/flux1-schnell/resolve/main/flux1-schnell-fp8.safetensors"
      )
 
