@@ -161,6 +161,26 @@ LORA_MODELS=(
     "https://civitai.com/api/download/models/755520" 
              # real pussy - peach
     "https://civitai.com/api/download/models/309907" 
+         # FLUX - Realistic Amateurs
+    "https://civitai.com/api/download/models/830461" 
+          # Boreal-FD: (Boring Reality Flux-Dev LoRA)
+    "https://civitai.com/api/download/models/810340" 
+         # JBX Althletic Slim Women
+    "https://civitai.com/api/download/models/830264" 
+         # Flux Slingshot
+    "https://civitai.com/api/download/models/777886" 
+         # Strapless bikini tanlines concept
+    "https://civitai.com/api/download/models/828148" 
+         # FLUX-Remove Clothing V2.0
+    "https://civitai.com/api/download/models/831470" 
+         # Professional Nude Photography V2.0 (FLUX)
+    "https://civitai.com/api/download/models/753099" 
+         # Natural Breast Shape Pack (FLUX)
+    "https://civitai.com/api/download/models/742127" 
+         # ENF - Embarassed, Covering, Femine (FLUX)
+    "https://civitai.com/api/download/models/732175" 
+    # style of Robert McGinnis [FLUX] 298
+    "https://civitai.com/api/download/models/829010" 
     
 )
 
