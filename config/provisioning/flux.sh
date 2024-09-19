@@ -181,7 +181,32 @@ LORA_MODELS=(
     "https://civitai.com/api/download/models/732175" 
     # style of Robert McGinnis [FLUX] 298
     "https://civitai.com/api/download/models/829010" 
-    
+    #  Transparent Dress (WtSSTaDaMiT)
+    "https://civitai.com/api/download/models/856044"
+    #  Underboob Cutout (Flux)
+    "https://civitai.com/api/download/models/811813"
+     #  Oiled Skin
+    "https://civitai.com/api/download/models/860331"
+     #  Jack Vettriano Style
+    "https://civitai.com/api/download/models/845114"
+     #  Jack Vettriano Style
+    "https://civitai.com/api/download/models/845114"
+     #  Jack Vettriano Style
+    "https://civitai.com/api/download/models/845114"
+     #  Jack Vettriano Style
+    "https://civitai.com/api/download/models/845114"
+    # nsfw-highress
+     "https://civitai.com/api/download/models/848532" 
+    # Wet Hair
+     "https://civitai.com/api/download/models/839619" 
+     # Pokies
+     "https://civitai.com/api/download/models/856857" 
+ # Caeltoe
+     "https://civitai.com/api/download/models/839619" 
+      # 35mm Photo - Flux
+     "https://civitai.com/api/download/models/739373" 
+      # Creampie - Flux
+     "https://civitai.com/api/download/models/751154" 
 )
 
 CELEB_LORA_MODELS=(
@@ -284,11 +309,14 @@ UNET_MODELS=(
      "https://huggingface.co/Kijai/flux-fp8/resolve/main/flux1-schnell-fp8.safetensors"
      "https://huggingface.co/Kijai/flux-fp8/resolve/main/flux1-dev-fp8.safetensors" 
     # "https://civitai.com/api/download/models/770213" 
-      "https://civitai.com/api/download/models/742989" 
+    # Flux unchained
+      #"https://civitai.com/api/download/models/742989" 
+     # Vision Realistic
       "https://civitai.com/api/download/models/694648"
     # fp8
     "https://huggingface.co/Comfy-Org/flux1-dev/resolve/main/flux1-dev-fp8.safetensors"
     #"https://huggingface.co/Comfy-Org/flux1-schnell/resolve/main/flux1-schnell-fp8.safetensors"
+    "https://civitai.com/api/download/models/866966"
      )
 
 
