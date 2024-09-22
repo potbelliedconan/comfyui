@@ -207,6 +207,18 @@ LORA_MODELS=(
      "https://civitai.com/api/download/models/739373" 
       # Creampie - Flux
      "https://civitai.com/api/download/models/751154" 
+       # Velma Dinkley Scooby Doo
+     "https://civitai.com/api/download/models/842632" 
+       # Rolf Armstron Style
+     "https://civitai.com/api/download/models/868345" 
+       # Jack Vettriano Style
+     "https://civitai.com/api/download/models/845114" 
+       # Zavy's Carnaval - Flux
+     "https://civitai.com/api/download/models/825435" 
+       # Omegle webcam [Flux Dev]
+     "https://civitai.com/api/download/models/864334" 
+     
+     
 )
 
 CELEB_LORA_MODELS=(
