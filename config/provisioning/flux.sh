@@ -105,8 +105,8 @@ LORA_MODELS=(
     "https://huggingface.co/XLabs-AI/flux-lora-collection/resolve/main/realism_lora_comfy_converted.safetensors"
     # Flux Scenery
     "https://huggingface.co/XLabs-AI/flux-lora-collection/resolve/main/scenery_lora_comfy_converted.safetensors"
-    # Flux NSFW SOCALGUITARIST
-    "https://civitai.com/api/download/models/715962"
+    # Flux Black Life
+    "https://civitai.com/api/download/models/796050"
         # Flux NSFW SOCALGUITARIST
     "https://civitai.com/api/download/models/772201"
         # Flux harness gag
@@ -151,18 +151,18 @@ LORA_MODELS=(
     "https://civitai.com/api/download/models/821168"
        # OnOff for Flux (On/Off)
     "https://civitai.com/api/download/models/809563"
-       # perfect pussy
-    "https://civitai.com/api/download/models/821168"
+       # COF
+    "https://civitai.com/api/download/models/889626"
          #  cash transaction
     "https://civitai.com/api/download/models/735901"
          # Hidden SpyCam Changing Room Peephole FLUX
     "https://civitai.com/api/download/models/729352"
          # 2000s Style Mirror Selfie Nudes FLUX
     "https://civitai.com/api/download/models/755520" 
-             # real pussy - peach
-    "https://civitai.com/api/download/models/309907" 
-         # FLUX - Realistic Amateurs
-    "https://civitai.com/api/download/models/830461" 
+             # Flux The Boys Cosplay
+    "https://civitai.com/api/download/models/891303?type=Model&format=SafeTensor" 
+         # FLUX - Nekked
+    "https://civitai.com/api/download/models/899821" 
           # Boreal-FD: (Boring Reality Flux-Dev LoRA)
     "https://civitai.com/api/download/models/810340" 
          # JBX Althletic Slim Women
@@ -187,21 +187,21 @@ LORA_MODELS=(
     "https://civitai.com/api/download/models/811813"
      #  Oiled Skin
     "https://civitai.com/api/download/models/860331"
-     #  Jack Vettriano Style
-    "https://civitai.com/api/download/models/845114"
-     #  Jack Vettriano Style
-    "https://civitai.com/api/download/models/845114"
-     #  Jack Vettriano Style
-    "https://civitai.com/api/download/models/845114"
-     #  Jack Vettriano Style
-    "https://civitai.com/api/download/models/845114"
+     #  ILLUSTRATION ~(FLUX)
+    "https://civitai.com/api/download/models/890590"
+     # Joschek's Takate Kote for Flux (Rope Bondage/Chest Harness)
+    "https://civitai.com/api/download/models/889520"
+     #  Extreme Detail Areola/Nipple (FLUX)
+    "https://civitai.com/api/download/models/895844"
+     #  Anus/Vulva Helper (FLUX)
+    "https://civitai.com/api/download/models/890979"
     # nsfw-highress
      "https://civitai.com/api/download/models/848532" 
     # Wet Hair
      "https://civitai.com/api/download/models/839619" 
      # Pokies
      "https://civitai.com/api/download/models/856857" 
- # Caeltoe
+     # Cameltoe
      "https://civitai.com/api/download/models/839619" 
       # 35mm Photo - Flux
      "https://civitai.com/api/download/models/739373" 
@@ -217,6 +217,10 @@ LORA_MODELS=(
      "https://civitai.com/api/download/models/825435" 
        # Omegle webcam [Flux Dev]
      "https://civitai.com/api/download/models/864334" 
+      # Tinker bell (Peter Pan) Disney
+     "https://civitai.com/api/download/models/755521" 
+      # Omegle webcam [Flux Dev]
+     "https://civitai.com/api/download/models/864334" 
      
      
 )
@@ -228,7 +232,7 @@ CELEB_LORA_MODELS=(
     # Kirsty Alloe
     "https://civitai.com/api/download/models/819386"
     # Hilary Clinton
-    "https://civitai.com/api/download/models/790803"
+    "https://civitai.com/api/download/models/897296"
      # Kate Upton
     "https://civitai.com/api/download/models/819719"
      # Andrea Botez
@@ -269,6 +273,13 @@ CELEB_LORA_MODELS=(
     "https://civitai.com/api/download/models/729722"
      # Gal Gadot
     "https://civitai.com/api/download/models/724060"
+    # Mary Cherry
+    "https://civitai.com/api/download/models/892961"
+    # Nathalie Emmanuel
+    "https://civitai.com/api/download/models/895862"
+    # Meg.August
+    "https://civitai.com/api/download/models/888695"
+    
 )
 VAE_MODELS=(
    # "https://huggingface.co/stabilityai/sd-vae-ft-ema-original/resolve/main/vae-ft-ema-560000-ema-pruned.safetensors"
@@ -324,7 +335,9 @@ UNET_MODELS=(
     # Flux unchained
       #"https://civitai.com/api/download/models/742989" 
      # Vision Realistic
-      "https://civitai.com/api/download/models/694648"
+     # "https://civitai.com/api/download/models/694648" 
+      # Uncensored Females (FLUX) **FP8/FP16 & CLIP-L in FP8**
+      "https://civitai.com/api/download/models/892116" 
     # fp8
     "https://huggingface.co/Comfy-Org/flux1-dev/resolve/main/flux1-dev-fp8.safetensors"
     #"https://huggingface.co/Comfy-Org/flux1-schnell/resolve/main/flux1-schnell-fp8.safetensors"
