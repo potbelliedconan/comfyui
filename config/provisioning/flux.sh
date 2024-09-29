@@ -294,24 +294,7 @@ ESRGAN_MODELS=(
     "https://huggingface.co/Akumetsu971/SD_Anime_Futuristic_Armor/resolve/main/4x_NMKD-Siax_200k.pth"
 )
 
-IPADAPTER_MODELS=(
-    "https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid_sd15.bin"
-    "https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sd15.bin"
-    "https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-portrait-v11_sd15.bin"
-    "https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid_sdxl.bin"
-    "https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sdxl.bin"
-    "https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-portrait_sdxl.bin"
-    "https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-portrait_sdxl_unnorm.bin"
 
-    "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15.safetensors"
-    "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15_light_v11.bin"
-    "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus_sd15.safetensors"
-    "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus-face_sd15.safetensors"
-    "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-full-face_sd15.safetensors"
-    "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15_vit-G.safetensors"
-    "https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter_sdxl_vit-h.safetensors"
-    #"https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter_sdxl.safetensors"
-   )
 
 CLIPVISION_MODELS=(
     "https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors"
@@ -319,6 +302,8 @@ CLIPVISION_MODELS=(
    )
 CLIP_MODELS=(
     "https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/clip_l.safetensors"
+    "https://huggingface.co/zer0int/CLIP-GmP-ViT-L-14/blob/main/ViT-L-14-TEXT-detail-improved-hiT-GmP-TE-only-HF.safetensors"
+    "https://civitai.com/api/download/models/892116"
     #"https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/t5xxl_fp16.safetensors"
     "https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/t5xxl_fp8_e4m3fn.safetensors"
     )
@@ -338,6 +323,7 @@ UNET_MODELS=(
      # "https://civitai.com/api/download/models/694648" 
       # Uncensored Females (FLUX) **FP8/FP16 & CLIP-L in FP8**
       "https://civitai.com/api/download/models/892116" 
+      "https://civitai.com/api/download/models/877366"
     # fp8
     "https://huggingface.co/Comfy-Org/flux1-dev/resolve/main/flux1-dev-fp8.safetensors"
     #"https://huggingface.co/Comfy-Org/flux1-schnell/resolve/main/flux1-schnell-fp8.safetensors"
@@ -463,10 +449,56 @@ function provisioning_print_end() {
 #    wget -qnc --content-disposition --show-progress -e dotbytes="${3:-4M}" -P "$2" "$1"
 #}
 
+#function provisioning_download() {
+#    if [[ "$1" == *"civitai.com"* ]]; then
+#        #if [[ -n "$token" ]]; then
+#            /opt/ai-dock/bin/download.py "$1" "$2"
+#    else
+#        wget -qnc --content-disposition --show-progress -e dotbytes="${3:-4M}" -P "$2" "$1"
+#    fi
+#}
+function provisioning_has_valid_hf_token() {
+    [[ -n "$huggingface_api_token" ]] || return 1
+    url="https://huggingface.co/api/whoami-v2"
+
+    response=$(curl -o /dev/null -s -w "%{http_code}" -X GET "$url" \
+        -H "Authorization: Bearer $huggingface_api_token" \
+        -H "Content-Type: application/json")
+
+    # Check if the token is valid
+    if [ "$response" -eq 200 ]; then
+        return 0
+    else
+        return 1
+    fi
+}
+
+function provisioning_has_valid_civitai_token() {
+    [[ -n "$CIVITAI_API_TOKEN" ]] || return 1
+    url="https://civitai.com/api/v1/models?hidden=1&limit=1"
+
+    response=$(curl -o /dev/null -s -w "%{http_code}" -X GET "$url" \
+        -H "Authorization: Bearer $CIVITAI_API_TOKEN" \
+        -H "Content-Type: application/json")
+
+    # Check if the token is valid
+    if [ "$response" -eq 200 ]; then
+        return 0
+    else
+        return 1
+    fi
+}
+
+# Download from $1 URL to $2 file path
 function provisioning_download() {
-    if [[ "$1" == *"civitai.com"* ]]; then
-        #if [[ -n "$token" ]]; then
-            /opt/ai-dock/bin/download.py "$1" "$2"
+    if [[ -n $huggingface_api_token && $1 =~ ^https://([a-zA-Z0-9_-]+\.)?huggingface\.co(/|$|\?) ]]; then
+        auth_token="$huggingface_api_token"
+    elif 
+        [[ -n $CIVITAI_API_TOKEN && $1 =~ ^https://([a-zA-Z0-9_-]+\.)?civitai\.com(/|$|\?) ]]; then
+        auth_token="$CIVITAI_API_TOKEN"
+    fi
+    if [[ -n $auth_token ]];then
+        wget --header="Authorization: Bearer $auth_token" -qnc --content-disposition --show-progress -e dotbytes="${3:-4M}" -P "$2" "$1"
     else
         wget -qnc --content-disposition --show-progress -e dotbytes="${3:-4M}" -P "$2" "$1"
     fi
