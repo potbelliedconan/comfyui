@@ -160,7 +160,7 @@ LORA_MODELS=(
          # 2000s Style Mirror Selfie Nudes FLUX
     "https://civitai.com/api/download/models/755520" 
              # Flux The Boys Cosplay
-    "https://civitai.com/api/download/models/891303?type=Model&format=SafeTensor" 
+    "https://civitai.com/api/download/models/891303" 
          # FLUX - Nekked
     "https://civitai.com/api/download/models/899821" 
           # Boreal-FD: (Boring Reality Flux-Dev LoRA)
