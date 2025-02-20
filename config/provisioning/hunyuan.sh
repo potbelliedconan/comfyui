@@ -69,8 +69,11 @@ VAE_MODELS=(
 )
 
 LORA_MODELS=(
-    #
-     
+    "https://civitai.com/api/download/models/1375664"
+    "https://civitai.com/api/download/models/1363026"
+    "https://civitai.com/api/download/models/1358969"
+    "https://civitai.com/api/download/models/1345795"
+    "https://civitai.com/api/download/models/1321779"
 )
 DIFFUSION_MODELS=(
     "https://huggingface.co/Kijai/SkyReels-V1-Hunyuan_comfy/blob/main/skyreels-hunyuan-I2V-Q5_K_M.gguf"
@@ -115,14 +118,14 @@ function provisioning_start() {
     source /opt/ai-dock/bin/venv-set.sh comfyui
 
     # Get licensed models if HF_TOKEN set & valid
-    if provisioning_has_valid_hf_token; then
-        UNET_MODELS+=("https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/flux1-dev.safetensors")
-        VAE_MODELS+=("https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/ae.safetensors")
-    else
-        UNET_MODELS+=("https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/main/flux1-schnell.safetensors")
-        VAE_MODELS+=("https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/main/ae.safetensors")
-        sed -i 's/flux1-dev\.safetensors/flux1-schnell.safetensors/g' /opt/ComfyUI/web/scripts/defaultGraph.js
-    fi
+    # if provisioning_has_valid_hf_token; then
+    #    UNET_MODELS+=("https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/flux1-dev.safetensors")
+    #    VAE_MODELS+=("https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/ae.safetensors")
+    # else
+    #    UNET_MODELS+=("https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/main/flux1-schnell.safetensors")
+    #    VAE_MODELS+=("https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/main/ae.safetensors")
+    #    sed -i 's/flux1-dev\.safetensors/flux1-schnell.safetensors/g' /opt/ComfyUI/web/scripts/defaultGraph.js
+    #fi
 
     download_script
     provisioning_print_header
@@ -130,12 +133,12 @@ function provisioning_start() {
     provisioning_get_default_workflow
     provisioning_get_nodes
     provisioning_get_pip_packages
-    provisioning_get_models \
-        "${WORKSPACE}/storage/stable_diffusion/models/ckpt" \
-        "${CHECKPOINT_MODELS[@]}"
     #provisioning_get_models \
-    #    "${WORKSPACE}/storage/stable_diffusion/models/lora" \
-    #    "${LORA_MODELS[@]}"
+    #    "${WORKSPACE}/storage/stable_diffusion/models/ckpt" \
+    #    "${CHECKPOINT_MODELS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/storage/stable_diffusion/models/lora" \
+        "${LORA_MODELS[@]}"
     provisioning_get_models \
        "${WORKSPACE}/storage/stable_diffusion/models/diffusion_models" \
        "${DIFFUSION_MODELS[@]}"
@@ -151,9 +154,9 @@ function provisioning_start() {
    # provisioning_get_models \
    #     "${WORKSPACE}/storage/stable_diffusion/models/clip_vision" \
    #     "${CLIPVISION_MODELS[@]}"
-   # provisioning_get_models \
-   #     "${WORKSPACE}/storage/stable_diffusion/models/clip" \
-   #     "${CLIP_MODELS[@]}"
+     provisioning_get_models \
+        "${WORKSPACE}/storage/stable_diffusion/models/clip" \
+        "${CLIP_MODELS[@]}"
    # provisioning_get_models \
    #     "${WORKSPACE}/storage/stable_diffusion/models/unet" \
    #     "${UNET_MODELS[@]}"
