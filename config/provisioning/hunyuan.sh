@@ -78,6 +78,7 @@ LORA_MODELS=(
 )
 DIFFUSION_MODELS=(
     "https://huggingface.co/Kijai/SkyReels-V1-Hunyuan_comfy/blob/main/skyreels-hunyuan-I2V-Q5_K_M.gguf"
+    "https://huggingface.co/Kijai/SkyReels-V1-Hunyuan_comfy/blob/main/skyreels_hunyuan_i2v_bf16.safetensors"
 )
 HF_PVT_MODELS=(
     ""
