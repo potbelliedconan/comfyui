@@ -163,7 +163,7 @@ function provisioning_start() {
    # provisioning_get_models \
    #     "${WORKSPACE}/storage/stable_diffusion/models/inpaint" \
    #     "${FOOOCUS_INPAINT_MODELS[@]}"
-   download_text_encoders
+   # download_text_encoders
    provisioning_print_end
 }
 
