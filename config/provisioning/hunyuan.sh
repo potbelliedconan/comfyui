@@ -40,7 +40,8 @@ NODES=(
    # "https://github.com/kijai/ComfyUI-Florence2"
    # "https://github.com/melMass/comfy_mtb"
    # "https://github.com/un-seen/comfyui-tensorops"
-
+    "https://github.com/city96/ComfyUI-GGUF"
+    "https://github.com/theUpsider/ComfyUI-Logic"
     "https://github.com/kijai/ComfyUI-KJNodes"
     "https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite"
     "https://github.com/kijai/ComfyUI-Florence2"
